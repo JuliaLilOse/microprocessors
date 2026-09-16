@@ -18,11 +18,40 @@ Coursework for microprocessors labs targeting an Arduino Nano with an ATmega328P
 
 The generated project files under each lab directory expect the Microchip device pack to be installed locally. Paths in the generated build tree are machine-specific and are not committed.
 
-## Build and upload
+## Build with MPLAB in VS Code
 
-Open either lab directory in VS Code with the MPLAB project integration enabled. Build the project to generate a HEX file under that lab's `out/` directory. The workspace task **Upload MPLAB HEX to Arduino Nano** uploads the newest verified HEX file to the configured Nano port.
+Open **one lab folder at a time** in VS Code: `lab1_C/` for the C version or `lab1_ASM/` for the assembly version. The folder you open must contain `.vscode/`, `cmake/`, `out/`, and the source file. Do not open the repository root when using the upload task.
 
-Before uploading, make sure the source has been rebuilt after the last source change and that the board port in the task configuration is correct.
+After changing the source, run **MPLAB CMake: Build** from the Command Palette, or press `Ctrl+Shift+B` and select the MPLAB-generated build task. Wait for `CMake Build successful. (exit code 0)` before uploading.
+
+## Build directly with CMake
+
+The CMake preset is stored inside each lab's generated MPLAB project. From the repository root, configure and build the C implementation with:
+
+```sh
+cd lab1_C/cmake/Nano_XC8_C_Template/default
+cmake --preset Nano_XC8_C_Template_default_conf
+cmake --build ../../../_build/Nano_XC8_C_Template/default
+```
+
+Build the assembly implementation with:
+
+```sh
+cd lab1_ASM/cmake/Nano_XC8_C_Template/default
+cmake --preset Nano_XC8_C_Template_default_conf
+cmake --build ../../../_build/Nano_XC8_C_Template/default
+```
+
+The HEX file is written to `lab1_C/out/Nano_XC8_C_Template/default.hex` or `lab1_ASM/out/Nano_XC8_C_Template/default.hex`.
+
+## Run the upload task
+
+1. Open `lab1_C/` or `lab1_ASM/` as the VS Code workspace folder.
+2. Build the lab with **MPLAB CMake: Build** or the CMake commands above.
+3. Run **Tasks: Run Task** from the Command Palette.
+4. Select **Upload MPLAB HEX to Arduino Nano**.
+
+The upload task is a global VS Code User Task because the Arduino CLI path and serial port are computer-specific. It checks that the project is an MPLAB project, that a HEX file exists, and that no source file is newer than the HEX file before uploading. Confirm that `ARDUINO_CLI_PATH`, `NANO_COM_PORT`, and the `arduino:avr:nano:cpu=atmega328old` board target match your computer and hardware. Use `arduino:avr:nano:cpu=atmega328` only for a Nano with the newer Optiboot bootloader.
 
 ## Repository layout
 
