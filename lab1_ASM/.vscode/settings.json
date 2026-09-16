@@ -1,0 +1,10 @@
+{
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}/_build/Nano_XC8_C_Template/default",
+    "mplab.clangd.path": "/Applications/microchip/xc8/v3.10/bin/xc8-clangd",
+    "cmake.sourceDirectory": "/Users/julialilley/microprocessors/lab1_ASM/cmake/Nano_XC8_C_Template/default",
+    "cmake.autoDetectSourceDirectory": false,
+    "C_Cpp.intelliSenseEngine": "disabled"
+}

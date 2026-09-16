@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# MPLAB XC8 and CMake build output
+_build/
+out/
+
+# Editor and tool caches
+.vscode/*.log
