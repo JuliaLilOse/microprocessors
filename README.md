@@ -58,4 +58,4 @@ lab1_ASM/
 - The LED is wired through a 330 Ω resistor to GND
 - The lab uses the ATmega328P device profile in the MPLAB project
 
-![Arduino Nano pinout reference](image.png)
+![Arduino Nano pinout reference](arduino-nano-pin-ref.png)
