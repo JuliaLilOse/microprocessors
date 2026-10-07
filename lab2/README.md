@@ -1,13 +1,15 @@
-
 # lab2
+
+Arduino Nano / ATmega328P button-and-LED exercise written in C. A button on
+PB4 toggles the LED connected to PD7.
 
 ## Structure
 
-| Path                    | Purpose                                                                                                                             |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| _build                  | The [CMake build tree](https://cmake.org/cmake/help/latest/manual/cmake.1.html#introduction-to-cmake-buildsystems), can be deleted. |
-| cmake                   | Generated [CMake](https://cmake.org/) files. May be deleted if user.cmake has not been added                                        |
-| .vscode                 | See [VSCode](https://code.visualstudio.com/docs/getstarted/settings)                                                                |
-| .vscode/settings.json   | Workspace specific settings                                                                                                         |
-| .vscode/lab2.mplab.json | The MPLAB project file, should not be deleted                                                                                       |
-| out                     | Final build artifacts                                                                                                               |
+| Path                       | Purpose                                      |
+|----------------------------|----------------------------------------------|
+| `main.c`                   | Button input and LED control firmware source |
+| `lab2-overview.md`         | Additional lab notes                         |
+| `.vscode/`                 | MPLAB project and workspace settings         |
+| `cmake/`                   | MPLAB-generated CMake project configuration |
+| `_build/`                  | Generated CMake build tree                   |
+| `out/`                     | Compiled firmware output                     |

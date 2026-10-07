@@ -7,3 +7,14 @@ out/
 
 # Editor and tool caches
 .vscode/*.log
+
+.generated_files/
+build/
+dist/
+nbproject/
+Makefile*
+Package-*
+private/
+!cmake/**/user.cmake
+cmake/**/.generated/*
+cmake/**/CMake*

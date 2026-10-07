@@ -1,13 +1,14 @@
+# lab1_ASM
 
-# Nano_XC8_C_Template
+Arduino Nano / ATmega328P LED blink exercise written in AVR assembly. The
+program toggles the LED connected to D8 (PB0).
 
 ## Structure
 
-| Path                                   | Purpose                                                                                                                             |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| _build                                 | The [CMake build tree](https://cmake.org/cmake/help/latest/manual/cmake.1.html#introduction-to-cmake-buildsystems), can be deleted. |
-| cmake                                  | Generated [CMake](https://cmake.org/) files. May be deleted if user.cmake has not been added                                        |
-| .vscode                                | See [VSCode](https://code.visualstudio.com/docs/getstarted/settings)                                                                |
-| .vscode\settings.json                  | Workspace specific settings                                                                                                         |
-| .vscode\Nano_XC8_C_Template.mplab.json | The MPLAB project file, should not be deleted                                                                                       |
-| out                                    | Final build artifacts                                                                                                               |
+| Path                                      | Purpose                                      |
+|-------------------------------------------|----------------------------------------------|
+| `main.S`                                  | LED blink firmware source                   |
+| `.vscode/`                                | MPLAB project and workspace settings         |
+| `cmake/`                                  | MPLAB-generated CMake project configuration |
+| `_build/`                                 | Generated CMake build tree                   |
+| `out/`                                    | Compiled firmware output                     |

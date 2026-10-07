@@ -1,13 +1,14 @@
-
 # lab3
+
+Arduino Nano / ATmega328P keypad and seven-segment display exercise written in
+C.
 
 ## Structure
 
-| Path                    | Purpose                                                                                                                             |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| _build                  | The [CMake build tree](https://cmake.org/cmake/help/latest/manual/cmake.1.html#introduction-to-cmake-buildsystems), can be deleted. |
-| cmake                   | Generated [CMake](https://cmake.org/) files. May be deleted if user.cmake has not been added                                        |
-| .vscode                 | See [VSCode](https://code.visualstudio.com/docs/getstarted/settings)                                                                |
-| .vscode/settings.json   | Workspace specific settings                                                                                                         |
-| .vscode/lab3.mplab.json | The MPLAB project file, should not be deleted                                                                                       |
-| out                     | Final build artifacts                                                                                                               |
+| Path                    | Purpose                                      |
+|-------------------------|----------------------------------------------|
+| `main.c`                | Keypad scanning and display firmware source  |
+| `.vscode/`              | MPLAB project and workspace settings         |
+| `cmake/`                | MPLAB-generated CMake project configuration |
+| `_build/`               | Generated CMake build tree                   |
+| `out/`                  | Compiled firmware output                     |
