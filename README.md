@@ -54,8 +54,6 @@ lab1_ASM/
   README.md
 
 lab3_pt2/
-  .vscode/
-  cmake/
   main.c
 ```
 
