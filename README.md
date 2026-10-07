@@ -6,6 +6,7 @@ This repository contains the Arduino Nano / ATmega328P lab work for ECED 3204-st
 
 - [lab1_C](lab1_C/) — C implementation that blinks an LED on Nano D8 (PB0)
 - [lab1_ASM](lab1_ASM/) — equivalent AVR assembly implementation
+- [lab3_pt2](lab3_pt2/) — AVR C project for the keypad and LED exercise
 
 ## Tooling
 
@@ -20,6 +21,7 @@ Open only one lab folder at a time in VS Code:
 
 - [lab1_C](lab1_C/) for the C version
 - [lab1_ASM](lab1_ASM/) for the assembly version
+- [lab3_pt2](lab3_pt2/) for the keypad and LED project
 
 Do not open the repository root for the upload task. The MPLAB project files and generated build outputs are inside each lab folder.
 
@@ -50,6 +52,11 @@ lab1_ASM/
   out/
   main.S
   README.md
+
+lab3_pt2/
+  .vscode/
+  cmake/
+  main.c
 ```
 
 ## Hardware note
