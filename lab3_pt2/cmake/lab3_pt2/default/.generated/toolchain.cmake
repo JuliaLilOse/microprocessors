@@ -61,3 +61,4 @@ if("${CMAKE_GENERATOR}" STREQUAL "Unix Makefiles")
         NAMES make
         DOC "Find a suitable make, avoid gmake")
 endif()
+

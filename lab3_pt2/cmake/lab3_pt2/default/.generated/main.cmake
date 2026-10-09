@@ -45,18 +45,19 @@ endif()
 
 
 # Main target for this project
-add_executable(lab3_pt2_default_image_x2XvrH_B ${lab3_pt2_default_library_list})
+add_executable(lab3_pt2_default_image_hCLGlN61 ${lab3_pt2_default_library_list})
 
-set_target_properties(lab3_pt2_default_image_x2XvrH_B PROPERTIES
+set_target_properties(lab3_pt2_default_image_hCLGlN61 PROPERTIES
     OUTPUT_NAME "default"
     SUFFIX ".elf"
     ADDITIONAL_CLEAN_FILES "${output_extensions}"
     RUNTIME_OUTPUT_DIRECTORY "${lab3_pt2_default_output_dir}")
-target_link_libraries(lab3_pt2_default_image_x2XvrH_B PRIVATE ${lab3_pt2_default_default_XC8_FILE_TYPE_link})
+target_link_libraries(lab3_pt2_default_image_hCLGlN61 PRIVATE ${lab3_pt2_default_default_XC8_FILE_TYPE_link})
 # Add the link options from the rule file.
-lab3_pt2_default_link_rule( lab3_pt2_default_image_x2XvrH_B)
+lab3_pt2_default_link_rule( lab3_pt2_default_image_hCLGlN61)
 
 
 #Add objcopy steps
-lab3_pt2_default_objcopy_avr_rule(lab3_pt2_default_image_x2XvrH_B)
-lab3_pt2_default_objcopy_lss_rule(lab3_pt2_default_image_x2XvrH_B)
+lab3_pt2_default_objcopy_avr_rule(lab3_pt2_default_image_hCLGlN61)
+lab3_pt2_default_objcopy_lss_rule(lab3_pt2_default_image_hCLGlN61)
+

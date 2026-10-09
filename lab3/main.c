@@ -1,8 +1,8 @@
 /**
  * @file main.c
- * @author julialilley
+ * @author julia and masa
  * @date 2026-10-07
- * @brief Main function
+ * @brief Debouncing a button press to toggle an LED on an AVR microcontroller.
  */
  #include <avr/io.h>
  #include <util/delay.h>
@@ -43,7 +43,6 @@ int main(void){
         } else {
             PORTD &= ~(1 << 7); // turn off the LED
         }
-    
     }
 
     return 0;
